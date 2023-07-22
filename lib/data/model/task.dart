@@ -1,5 +1,5 @@
 import 'package:hive/hive.dart';
-import 'package:note_app/data/task_type.dart';
+import 'package:note_app/data/model/task_type.dart';
 
 part 'task.g.dart';
 

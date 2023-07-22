@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/screens/edit_task_screen.dart';
-import 'package:note_app/data/task.dart';
+import 'package:note_app/data/model/task.dart';
 
 class TaskWidget extends StatefulWidget {
   TaskWidget({Key? key, required this.task}) : super(key: key);

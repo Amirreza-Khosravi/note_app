@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-import 'package:note_app/data/task.dart';
+import 'package:note_app/data/model/task.dart';
 import 'package:note_app/widgets/task_type_item.dart';
 import 'package:note_app/utility/utility.dart';
 import 'package:time_pickerr/time_pickerr.dart';
 
 class EditTask extends StatefulWidget {
   EditTask({Key? key, required this.task}) : super(key: key);
-  Task task;
+  final Task task;
   @override
   State<EditTask> createState() => _EditTaskState();
 }

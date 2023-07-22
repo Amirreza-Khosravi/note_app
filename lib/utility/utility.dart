@@ -1,5 +1,5 @@
-import 'package:note_app/data/task_type.dart';
-import 'package:note_app/data/type_enum.dart';
+import 'package:note_app/data/model/task_type.dart';
+import 'package:note_app/data/model/type_enum.dart';
 
 List<TaskType> getTaskTypeList() {
   var list = [

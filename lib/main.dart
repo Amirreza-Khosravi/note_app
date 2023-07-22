@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:note_app/screens/home_screen.dart';
-import 'package:note_app/data/task.dart';
-import 'package:note_app/data/task_type.dart';
-import 'package:note_app/data/type_enum.dart';
+import 'package:note_app/data/model/task.dart';
+import 'package:note_app/data/model/task_type.dart';
+import 'package:note_app/data/model/type_enum.dart';
+import 'package:note_app/screens/splash_screen.dart';
 
 void main() async {
   await Hive.initFlutter();
-  var box = await Hive.openBox('names');
   Hive.registerAdapter(TaskAdapter());
   Hive.registerAdapter(TaskTypeAdapter());
   Hive.registerAdapter(TaskTypeEnumAdapter());
@@ -22,7 +21,7 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: Splashscreen(),
     );
   }
 }
