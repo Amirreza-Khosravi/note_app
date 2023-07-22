@@ -4,7 +4,7 @@ import 'package:note_app/data/model/task.dart';
 
 class TaskWidget extends StatefulWidget {
   TaskWidget({Key? key, required this.task}) : super(key: key);
-  Task task;
+  final Task task;
 
   @override
   State<TaskWidget> createState() => _TaskWidgetState();

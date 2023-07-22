@@ -8,9 +8,9 @@ class getTaskTypeItemList extends StatelessWidget {
       required this.index,
       required this.selectedItemList})
       : super(key: key);
-  TaskType taskType;
-  int index;
-  int selectedItemList;
+  final TaskType taskType;
+  final int index;
+  final int selectedItemList;
   @override
   Widget build(BuildContext context) {
     return Container(
