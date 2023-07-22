@@ -22,15 +22,6 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'SM',
-        textTheme: TextTheme(
-          headline4: TextStyle(
-            fontSize: 16,
-            color: Colors.white,
-          ),
-        ),
-      ),
       home: HomeScreen(),
     );
   }

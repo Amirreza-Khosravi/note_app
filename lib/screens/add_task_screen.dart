@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:note_app/data/task.dart';
-import 'package:note_app/data/task_type.dart';
 import 'package:note_app/widgets/task_type_item.dart';
 import 'package:note_app/utility/utility.dart';
 import 'package:time_pickerr/time_pickerr.dart';
@@ -170,7 +169,7 @@ class _AddTaskState extends State<AddTask> {
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               style: ElevatedButton.styleFrom(
-                primary: Color(0xff18DAA3),
+                backgroundColor: Color(0xff18DAA3),
                 minimumSize: Size(200, 45),
               ),
             ),
